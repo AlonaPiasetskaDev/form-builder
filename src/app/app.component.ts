@@ -30,23 +30,7 @@ class Style {
 
 @Component({
   selector: 'my-app',
-  template: `
-  <div class="row" style="height: '85vh'">
-  <div class="col s12 m4 l2" style="height: '85vh'; background: '#FF7C60'">
-  <styles-component></styles-component>
-  </div>
-  <div class="col s12 m4 l8" style="height: '85vh'; background: '#60FF9C'">
-  <form-component></form-component>
-  </div>
-  <div class="col s12 m4 l2" style="height: '85vh'; background: '#60B9FF'">
-  <elements-component></elements-component>
-  </div>
-  </div>
-  
-  
-  
-  
-`
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent {

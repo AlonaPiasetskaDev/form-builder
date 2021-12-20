@@ -5,10 +5,7 @@ import {
 
 @Component({
   selector: 'elements-component',
-  template: `<div class="styles">
-  <p>Block: {{name}}</p>
-  </div>`,
-  styles: [`.styles {color: orange; height: 400px;}`]
+  templateUrl: './elements.component.html'
 })
 
 export class ElementsComponent {

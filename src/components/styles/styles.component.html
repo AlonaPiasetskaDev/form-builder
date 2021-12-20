@@ -1,0 +1,21 @@
+<!-- <ng-content></ng-content> -->
+<form-component [placeholderText]="placeholderText" [width]="width" [height]="height" [borderStyle]="borderStyle">
+</form-component>
+
+<div class="container" id="styles-component">
+  <!-- <div class="container"> -->
+  <div class="page-header">
+    <!-- Parent component -->
+    <h5>Block: {{name}}</h5>
+    <p>Parent component </p>
+    <p>{{placeholderText}}</p>
+    <input type="text" [ngModel]="placeholderText" (keyup)="onPH($event)" />
+    <p>{{width}}</p>
+    <input type="number" [ngModel]="width" (keyup)="onWidth($event)" />
+    <p>{{height}}</p>
+    <input type="number" [ngModel]="height" (keyup)="onHeight($event)" />
+    <p>{{borderStyle}}</p>
+    <input type="text" [ngModel]="borderStyle" (keyup)="onBorderStyleChange($event)" />
+  </div>
+  <button class="waves-effect waves-light btn" (click)="showinfo()"> Add styles</button>
+</div>
